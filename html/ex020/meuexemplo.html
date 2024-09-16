@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando div e menus</title>
+    <style>
+      a{text-decoration: none;}
+
+      li{list-style-type: none;
+       list-style-position: initial;}
+
+       body{
+        font-family: Arial, Helvetica, sans-serif;}
+
+        div > ul{display: none;}
+
+        div:hover > ul{
+            display: block;
+            background-color: blue; width: 200px; height: 100px; border-radius: 10px;
+            
+        }
+      div > ul > li:hover{
+        color: red;
+        background-color: black;
+      
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>Site Principal</h1>
+    <p>Veja nosso menu abaixo:</p>
+    <div>
+        Menu
+        <ul>
+         
+          <li><a href="facebook.com.br" target="_blank">item 1</a></li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
