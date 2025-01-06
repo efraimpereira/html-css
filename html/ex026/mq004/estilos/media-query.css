@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/*Todas as demais medias*/
+/*Typical Device Breakpoints
+
+Extra small mobile: 320–480 pixels for the smallest smartphones
+
+Small mobile: 481–600 pixels for landscape mode on smartphones
+
+Small tablet: 601–768 pixels for portrait mode on tablets like the iPad Mini
+
+Large tablet: 769–1024 pixels for landscape mode on tablets like the iPad Pro
+
+Small desktop and laptop: 1025–1280 pixels for smaller laptops or desktops
+
+Large desktop: 1281–1440 pixels for large desktop monitors and high-resolution screens
+
+Extra-large screen: 1441 pixels and up for ultra-wide or high-definition monitors
+*/
+
+@media print { /*impressão*/ 
+    *{
+        width: 90vw;
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+    
+    
+    body {
+        background-image: url(../imagens/back-print.jpg);/*NÃO TEM NECESSIDADE DE BACKGROUND*/
+        font-family: 'Courier New', Courier, monospace;
+      
+    }
+    #phone {display: none}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black
+    }
+}; 
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg) ;
+    }
+    #phone {display: none}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*Desktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone {display: none}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;}
+    #tv {display: none;}
+}
+
+
+@media screen and (min-width:1200px ) { /*Grandes telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone {display: none}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display: block;}
+}
